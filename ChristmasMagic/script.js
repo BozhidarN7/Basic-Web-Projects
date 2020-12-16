@@ -9,12 +9,21 @@ const btnCloseModal = document.querySelector('.btn--close-modal');
 const btnsOpenModal = document.querySelectorAll('.btn--show-modal');
 const btnScrollTo = document.querySelector('.btn--scroll-to');
 const section1 = document.querySelector('#section--1');
+const section4 = document.querySelector('#section--4');
 const tabs = document.querySelectorAll('.activities__tab');
 const tabsContainer = document.querySelector('.activities__tab-container');
 const tabsContent = document.querySelectorAll('.activities__content');
 const nav = document.querySelector('.nav');
 const header = document.querySelector('.header');
 const topArrow = document.querySelector('.top__arrow');
+const btnContactUs = document.querySelector('.btn-contact-us');
+const btnBecomeMember = document.querySelector('.btn-become-member')
+const nameField = document.querySelector('#fullName');
+const emailField = document.querySelector('#email');
+const messageField = document.querySelector('#message');
+const memberFirstName = document.querySelector('.member-firstName');
+const memberLastName = document.querySelector('.member-lastName');
+const memberEmail = document.querySelector('.member-email');
 
 const openModal = function(e) {
     e.preventDefault();
@@ -190,7 +199,7 @@ const sectionObserver = new IntersectionObserver(revealSection, {
 
 allSections.forEach(function(section) {
     sectionObserver.observe(section);
-    section.classList.add('section--hidden')
+    //section.classList.add('section--hidden')
 });
 
 // Lazy loading images
@@ -215,3 +224,27 @@ const imgObserver = new IntersectionObserver(loadImg, {
 });
 
 imgTarget.forEach(img => imgObserver.observe(img));
+
+// Send message 
+btnContactUs.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    if (nameField.value !== '' && emailField.value !== '' && messageField.value !== '') {
+        const newMessage = document.createElement('p');
+        newMessage.classList.add('message-sent');
+        newMessage.textContent = 'Съобщението е изпратено';
+        section4.append(newMessage);
+        setTimeout(() => newMessage.remove(), 3000);
+    }
+
+    nameField.value = '';
+    emailField.value = '';
+    messageField.value = '';
+});
+
+btnBecomeMember.addEventListener('click', function(e) {
+    e.preventDefault();
+    memberFirstName.value = '';
+    memberLastName.value = '';
+    memberEmail.value = '';
+});

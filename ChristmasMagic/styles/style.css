@@ -439,6 +439,12 @@ textarea {
     border-radius: 0.5rem;
 }
 
+.message-sent {
+    font-size: 1.7rem;
+    color: white;
+    padding-top: 10px;
+}
+
 
 /* FOOTER */
 
