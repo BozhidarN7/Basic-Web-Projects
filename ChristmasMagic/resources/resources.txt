@@ -1,0 +1,10 @@
+Images
+https://nypost.com/2018/12/19/dying-man-left-2-year-old-14-years-worth-of-christmas-gifts/
+https://gephardtdaily.com/consumer/gifts-kids-life/
+https://iconscout.com/icon/present-106
+
+Snowflakes
+https://pajasevi.github.io/CSSnowflakes/
+
+Design idea and implementation with the help of:
+https://www.udemy.com/course/the-complete-javascript-course/
