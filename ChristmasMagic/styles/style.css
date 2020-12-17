@@ -360,6 +360,13 @@ h4 {
     grid-column: 2;
 }
 
+.activities__content img {
+    grid-column: 2;
+    padding-top: 10px;
+    width: 400px;
+    height: auto;
+}
+
 .activities__icon--1 {
     background-color: var(--color-secondary-opacity);
 }
