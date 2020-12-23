@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Styles/style.css" rel="stylesheet">
+    <link href="Styles/query.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Здравословни рецепти</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li><span id="btnOpen">&#9776;</span></li>
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="share-receipt.html">Сподели рецепта</a></li>
+                <li><a href="registration-login-form.html">Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside>
+        <div id="mySidenav" class="sidenav">
+            <a style="cursor: pointer;" class="closebtn">&times;</a>
+            <a href="index.html">Здравословни закуски</a>
+            <a href=" # ">Солени десерти</a>
+            <a href="# ">Сладки десерти</a>
+            <a href="# ">Вегански ястия</a>
+            <a href="# ">Вегетариански ястия</a>
+            <a href="# ">Скара</a>
+            <a href="# ">Салати</a>
+            <a href="# ">Рибни ястия</a>
+            <a href="# ">Гурме</a>
+            <a href="# ">Напитки</a>
+        </div>
+    </aside>
+    <main>
+        <section>
+            <div class="title">
+                <h1>Здравословни и вкусни рецепти</h1>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div onclick="openModal( 'id0') " class="meal id0">
+                    <h2>Бананови палачинки без брашно</h2>
+                    <img src="https://www.az-jenata.bg/media/az-jenata/files/articles/640x480/3892f014a8c0a894ab83aabb9905746c.jpg " alt="Палачинки ">
+                    <p>
+                        Палачинките са любим десерт на почти всички. Лошото е, че са калорични и вредят на тънката ви талия. Но има начин да ги направите по-полезни и диетични. Предлагаме една чудесна рецепта за диетични палачинки със здравословни съставки точно за тази цел
+                    </p>
+                </div>
+                <div onclick="openModal( 'id1') " class="meal id1 ">
+                    <h2>Нахутени кексчета с праз и подправки</h2>
+                    <img src="data:image/jpeg;base64,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"
+                        alt=" нахутени кексчета ">
+                    <p>
+                        Нахутените кексчета с праз и подправки са много вкусни както топлички, така и студени.
+                    </p>
+                </div>
+                <div onclick="openModal( 'id2') " class="meal id2 ">
+                    <h2>Кокосова палачинка</h2>
+                    <img src="https://inspiredfitstrong.com/wp-content/uploads/2015/10/zakuska2.jpg " alt="Палачинки ">
+                    <p>
+                        Палачинките са сред любимите ми закуски. Количеството на продуктите може да варира в зависимост от това какви са целите ви, колко енергия изразходвате, колко пъти на ден се храните и разбира се колко тежите в момента.
+                    </p>
+                </div>
+
+                <div onclick="openModal( 'id3') " class="meal id3 ">
+                    <h2>Палачинка със сладки картофи</h2>
+                    <img src="https://inspiredfitstrong.com/wp-content/uploads/2015/10/Sweet-Potato-Pancakes.jpg " alt="Палачинки ">
+                    <p>
+                        Малко нестандартен, но изключително вкусен и здравословен вариант на палачинка. Опитайте да я приготвите и ще останете изумени.
+                    </p>
+                </div>
+                <div onclick="openModal( 'id4') " class="meal id4 ">
+                    <h2>Тиквен хляб</h2>
+                    <img src="https://inspiredfitstrong.com/wp-content/uploads/2015/10/pump-bread.jpg " alt="тиквен хляб ">
+                    <p>
+                        Oмръзналовие от мекия бял хляб, от който постоянно ви боли корема. Вместо да купувате пълнозърнест хляб пробвайте тази лесна рецепта. Гарантирам ви, че ще ви хареса.
+                    </p>
+                </div>
+                <div onclick="openModal( 'id5') " class="meal id5 ">
+                    <h2>Солена палачинка</h2>
+                    <img src="https://inspiredfitstrong.com/wp-content/uploads/2015/10/cottage.jpg " alt="палачинка ">
+                    <p>
+                        Това е един зашеметяващо вкусен и интересен вариант за солена палачинка, който ще ви даде необходимата енергия за сутринта. Приготвя се изкютиелно лесно и бързо дори и от най-неопитните готвачи.
+                    </p>
+                </div>
+
+                <div onclick="openModal( 'id6') " class="meal id6 ">
+                    <h2>Тиквена палачинка</h2>
+                    <img src="https://inspiredfitstrong.com/wp-content/uploads/2015/10/%D0%BF%D0%B0%D0%BB%D0%B0%D1%87%D0%B8%D0%BD%D0%BA%D0%B05.jpg " alt="Палачинки ">
+                    <p>
+                        Поредният изключителен вариант за плачинка, този път основната съствака е тиквата. Ухае чудесно още при приготвяане. Опитайте непременно. Няма да сте си изгубили времето.
+                    </p>
+                </div>
+                <div onclick="openModal( 'id7') " class="meal id7 ">
+                    <h2>Палачинкова торта – Кала</h2>
+                    <img src="https://inspiredfitstrong.com/wp-content/uploads/2015/10/obqd9.jpg " alt="Торта ">
+                    <p>Всички ние обичаме палачинки. Дори, когато целта ни е да изваем тяло като склуптора, да броим плочките на корема си или фибрите на мускулите си. Няма значение каква е целта ни – палачинките винаги са примамливи.
+                    </p>
+                </div>
+                <div onclick="openModal( 'id8') " class="meal id8 ">
+                    <h2>Таханови десертчета</h2>
+                    <img src="https://inspiredfitstrong.com/wp-content/uploads/2015/10/tahanovi.jpg " alt="таханови десерчета ">
+                    <p>
+                        Последно за тази секция, но не на последно място по вкус, ще ви науча как да си наприте ползни таханови десертчета, които можете да приготвите за броени минути.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="modal hidden ">
+            <button class="close-modal ">&times;</button>
+        </div>
+        <div class="overlay hidden "></div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <p> All Rights Reserved - 2020</p>
+            <p>Свържете се с мен: stu2001321031@uni-plovdiv.bg</p>
+        </div>
+    </footer>
+
+    <script src="Scripts/sidenav.js "></script>
+    <script src="Scripts/modal.js "></script>
+</body>
+
+</html>

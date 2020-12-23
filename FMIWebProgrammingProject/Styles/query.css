@@ -1,0 +1,70 @@
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 110%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .title h1 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .meal img {
+        float: none;
+    }
+    .meal {
+        flex: 47%;
+    }
+    .modal {
+        overflow-y: scroll;
+        height: 100%;
+    }
+    .ingredients {
+        float: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .meal {
+        flex: 100%;
+    }
+    .sidenav a {
+        font-size: 100%;
+    }
+    .ingredients {
+        overflow-y: scroll;
+        background: transparent;
+        box-shadow: none;
+        height: 300px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .meal {
+        flex: 100%;
+    }
+    .nav-bar {
+        flex-direction: column;
+    }
+    .nav-bar li {
+        float: none;
+        text-align: center;
+        width: 80%;
+        margin-left: 40px;
+    }
+    .ingredients ol {
+        margin-left: 1rem;
+    }
+    .sidenav .closebtn {
+        left: -50px;
+    }
+}

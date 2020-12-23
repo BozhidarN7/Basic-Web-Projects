@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Styles/style.css" rel="stylesheet">
+    <link href="Styles/registration-login-form-style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Здравословни рецепти/Регистрация</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="share-receipt.html">Сподели рецепта</a></li>
+                <li><a href="registration-login-form.html">Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Влзез</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Регистрация</button>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+                <form id="login" class="input-group">
+                    <input type="text" class="input-field" placeholder="Потребителско име" required>
+                    <input type="password" class="input-field" placeholder="Парола" required>
+                    <input type="checkbox" class="check-box"><span>Запомни ме</span>
+                    <button type="submit" class="submit-btn">Влез</button>
+                </form>
+                <form id="register" class="input-group">
+                    <input type="text" class="input-field" placeholder="Потребителско име" required>
+                    <input type="email" class="input-field" placeholder="Имейл" required>
+                    <input type="password" class="input-field" placeholder="Парола" required>
+                    <input type="password" class="input-field" placeholder="Потвърди паролата" required>
+                    <input type="checkbox" class="check-box"><span>Приемам правилата и условията</span>
+                    <button type="submit" class="submit-btn">Регистрация</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <p> All Rights Reserved - 2020</p>
+            <p>Свържете се с мен: stu2001321031@uni-plovdiv.bg</p>
+        </div>
+    </footer>
+    <script>
+        const loginForm = document.querySelector('#login');
+        const registerForm = document.querySelector('#register');
+        const btnEl = document.querySelector('#btn');
+
+        function register() {
+            loginForm.style.left = '-400px';
+            registerForm.style.left = '50px';
+            btnEl.style.left = '110px';
+        }
+
+        function login() {
+            loginForm.style.left = '50px';
+            registerForm.style.left = '450px';
+            btnEl.style.left = '0';
+        }
+    </script>
+</body>
+
+</html>

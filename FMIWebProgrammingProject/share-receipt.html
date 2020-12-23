@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Styles/style.css" rel="stylesheet">
+    <link href="Styles/share-receipt.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Здравословни рецепти/сподели рецепта</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="share-receipt.html">Сподели рецепта</a></li>
+                <li><a href="registration-login-form.html">Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="hero">
+                <div class="form-box">
+                    <h2>Сподели рецепта</h2>
+
+                    <div class="input-field">
+                        <label>Име на рецептата:</label>
+                        <input type="text" class="input" placeholder="Име на рецептата" required>
+                    </div>
+                    <div class="input-field">
+                        <label>Избери категория:</label>
+                        <select class="select-field">
+                                <option>Здравословни закуски</option>
+                                <option>Солени десерти</option>
+                                <option>Сладки десерти</option>
+                                <option>Вегански ястия</option>
+                                <option>Вегетариански ястия</option>
+                                <option>Скара</option>
+                                <option>Салати</option>
+                            </select>
+                    </div>
+                    <div class="input-field">
+                        <label>Съставки</label>
+                        <textarea id="ingredients" class="textarea-field" cols="30" rows="10" required></textarea>
+                    </div>
+                    <div class="input-field">
+                        <label>Начин на приготвяне</label>
+                        <textarea id="description" class="textarea-field" cols="30" rows="10" required></textarea>
+                    </div>
+                    <div class="input-field">
+                        <label>Избери снимка</label>
+                        <input type="file" class="btn-upload" required>
+                    </div>
+                    <div>
+                        <input class="btn-submit" type="submit" value="Публикувай">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+            </div>
+        </section>
+        <div class="modal hidden ">
+            <button class="close-modal ">&times;</button>
+        </div>
+        <div class="overlay hidden "></div>
+    </main>
+    <footer>
+        <div class="footer">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <p> All Rights Reserved - 2020</p>
+            <p>Свържете се с мен: stu2001321031@uni-plovdiv.bg</p>
+        </div>
+    </footer>
+    <script src="Scripts/shareReceipt.js "></script>
+</body>
+
+</html>
