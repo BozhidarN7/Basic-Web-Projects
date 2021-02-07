@@ -9,6 +9,7 @@ const inputDistance = document.querySelector('.form__input--distance');
 const inputDuration = document.querySelector('.form__input--duration');
 const inputCadence = document.querySelector('.form__input--cadence');
 const inputElevation = document.querySelector('.form__input--elevation');
+const btnDeleteAll = document.querySelector('.btn__delete-all');
 
 class Workout {
     date = new Date();
@@ -68,8 +69,8 @@ class App {
         this._getLocalStorage();
         form.addEventListener('submit', this._newWorkout.bind(this));
         inputType.addEventListener('change', this._toggleElevationField);
-
         containerWorkouts.addEventListener('click', this._moveToPopup.bind(this));
+        btnDeleteAll.addEventListener('click', this._deleteAllWorkouts.bind(this));
     }
     _getPosition() {
         if (navigator.geolocation) {
@@ -146,6 +147,9 @@ class App {
         this._workouts.push(workout);
         console.log(workout);
 
+        // Show options
+        btnDeleteAll.style.opacity = 1;
+
         // Display maker
         this._renderWorkoutMarker(workout);
         this._renderWorkout(workout);
@@ -154,6 +158,11 @@ class App {
         this._hideForm();
 
         this._setLocalStorage();
+    }
+
+    _deleteAllWorkouts() {
+        this.reset();
+        btnDeleteAll.style.opacity = 0;
     }
 
     _renderWorkoutMarker(workout) {
@@ -214,7 +223,6 @@ class App {
         </li>
             `
         }
-
         form.insertAdjacentHTML('afterend', html);
     }
 
